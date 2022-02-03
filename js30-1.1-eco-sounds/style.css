@@ -1,0 +1,184 @@
+   html {
+    scroll-behavior: smooth;
+  }
+
+  .container {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 auto;
+  }
+  
+  .header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background-color: black;
+  }
+
+  .logo {
+    background-image: url("./assets/svg/logo.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    margin-left: 50px;
+    /* margin-top: 10px; */
+    transition: 0.7s;
+  }
+
+  .logo:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+    contrast(87%);
+    cursor: pointer;
+  }
+  
+  .nav {
+    margin-left: auto;
+    padding-right: 60px;
+  }
+  
+  .nav-li {
+    display: inline-block;
+    list-style: none;
+    padding-left: 30px;
+    transition: 0.7s;
+  }
+  
+  .nav-link {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
+  .nav-li:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+      contrast(87%);
+  }
+
+  .video-container {
+    background-image: url("./assets/img/solovey.jpg");
+    height: 620px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+
+button {
+    background-image: url("./assets/svg/play.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    transition: 0.7s;
+    border: none;
+    padding: 0;
+    background-size: contain;
+    background-color: transparent;
+  }
+
+  .pause {
+    background-image: url("./assets/svg/pause.svg");
+  }
+
+  
+
+
+
+/*   
+  .video-button {
+    background-image: url("./assets/svg/play.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    transition: 0.7s;
+    border: none;
+    padding: 0;
+    background-size: contain;
+    background-color: transparent;
+  } */
+
+  button:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+      contrast(87%);
+      cursor: pointer;
+  }  
+
+  /* .video-button.active {
+    background-image: url("./assets/svg/pause.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    transition: 0.7s;
+    border: none;
+    background-color: transparent;
+   */
+
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 70px;
+    background: #000000;
+  }
+  
+  .footer-box {
+    margin-left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-text {
+    display: inline-block;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 50px;
+    padding-left: 20px;
+    color: #ffffff;
+  }
+  
+  .footer-text-link {
+    text-decoration: none;
+  }
+  
+  .footer-text-link:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+      contrast(87%);
+    transition: 0.7s;
+  }
+
+  .footer-link {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 50px;
+    margin-left: 60px;
+    text-align: justify;
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  .icon {
+    margin-right: 30px;
+    height: 50px;
+    fill: #ffffff;
+} 
+
+  .icon:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+      contrast(87%);
+    transition: 0.7s;
+  }
