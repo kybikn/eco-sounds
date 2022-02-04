@@ -3,8 +3,6 @@ const audio = document.querySelector("audio");
 const playBtn = document.querySelector(".play");
 const videoContainer = document.querySelector(".video-container");
 
-let isPlay = false;
-
 function playAudio() {
   audio.currentTime = 0;
   audio.play();
@@ -15,14 +13,12 @@ function pauseAudio() {
 }
 
 function toggleBtn() {
-  if (!isPlay) {
+  if (audio.paused) {
     playBtn.classList.add("pause");
     audio.play();
-    isPlay = true;
   } else {
     playBtn.classList.remove("pause");
     audio.pause();
-    isPlay = false;
   }
 }
 
@@ -47,6 +43,5 @@ function changeAudio(event) {
     audio.src = `./assets/audio/${bird}.mp3`;
     playBtn.classList.add("pause");
     audio.play();
-    isPlay = true;
   }
 }
