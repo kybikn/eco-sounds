@@ -1,9 +1,15 @@
-   html {
+  html {
     scroll-behavior: smooth;
   }
 
+  * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+  }
+
   .container {
-    max-width: 1920px;
+    width: 100%;
     margin: 0 auto;
     padding: 0 auto;
   }
@@ -24,7 +30,6 @@
     width: 50px;
     height: 50px;
     margin-left: 50px;
-    /* margin-top: 10px; */
     transition: 0.7s;
   }
 
@@ -47,81 +52,60 @@
   }
   
   .nav-link {
-    font-family: Inter;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
     text-decoration: none;
     color: #ffffff;
+    transition: 0.7s;
+  }
+
+  .nav-link.active {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+      contrast(87%);
   }
   
   .nav-li:hover {
     filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
       contrast(87%);
+      cursor: pointer;
   }
 
   .video-container {
-    background-image: url("./assets/img/solovey.jpg");
-    height: 620px;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: calc(100vh - 120px);
+    min-height: 280px;
     width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
-
-
-button {
+  .play {
     background-image: url("./assets/svg/play.svg");
+    background-size: contain;
+    background-color: transparent;
     background-position: center;
     background-repeat: no-repeat;
-    width: 100px;
-    height: 100px;
+    width: 160px;
+    height: 160px;
     transition: 0.7s;
     border: none;
     padding: 0;
-    background-size: contain;
-    background-color: transparent;
   }
 
-  .pause {
-    background-image: url("./assets/svg/pause.svg");
-  }
-
-  
-
-
-
-/*   
-  .video-button {
-    background-image: url("./assets/svg/play.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100px;
-    height: 100px;
-    transition: 0.7s;
-    border: none;
-    padding: 0;
-    background-size: contain;
-    background-color: transparent;
-  } */
-
-  button:hover {
+  .play:hover {
     filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
       contrast(87%);
-      cursor: pointer;
+    cursor: pointer;
   }  
 
-  /* .video-button.active {
+  .play.pause {
     background-image: url("./assets/svg/pause.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100px;
-    height: 100px;
-    transition: 0.7s;
-    border: none;
-    background-color: transparent;
-   */
+  }
 
   .footer-container {
     display: flex;
@@ -140,7 +124,7 @@ button {
 
   .footer-text {
     display: inline-block;
-    font-family: Inter;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 25px;
@@ -151,16 +135,17 @@ button {
   
   .footer-text-link {
     text-decoration: none;
+    transition: 0.7s;
   }
   
   .footer-text-link:hover {
     filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
       contrast(87%);
-    transition: 0.7s;
+    cursor: pointer;
   }
 
   .footer-link {
-    font-family: Inter;
+   font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
@@ -172,13 +157,13 @@ button {
   }
 
   .icon {
-    margin-right: 30px;
     height: 50px;
+    transition: 0.7s;
     fill: #ffffff;
 } 
 
   .icon:hover {
     filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
       contrast(87%);
-    transition: 0.7s;
+    cursor: pointer;
   }
