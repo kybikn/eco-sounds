@@ -1,4 +1,4 @@
-# Слайдер "Eco-sounds"
+# Проигрыватель "Eco-sounds"
 ## Сайт:
 [Click here!](https://kybikn.github.io/eco-sounds/eco-sounds/)
 
